@@ -28,7 +28,8 @@
 			}, e.o = function (t, e) {
 				return Object.prototype.hasOwnProperty.call(t, e)
 			}, e.p = "/", e(e.s = 39)
-		}([function (t, e, i) {
+		}([
+			function (t, e, i) {
 			"use strict";
 			var n, r, a, o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
 				return typeof t
