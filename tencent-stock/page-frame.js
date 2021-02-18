@@ -1,1 +1,1 @@
-var __pageFrameJsStartTime__ = Date.now();
+var __pageFrameJsStartTime__ = Date.now()
