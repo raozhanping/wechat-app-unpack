@@ -1,3 +1,6 @@
+/**
+ * 包括 wxml和js 逻辑代码
+ */
 var __wxAppData = __wxAppData || {}
 var __wxRoute = __wxRoute || ''
 var __wxRouteBegin = __wxRouteBegin || ''

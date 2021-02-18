@@ -1,3 +1,6 @@
+/**
+ * 包括 wxss 样式
+ */
 /* eslint-disable no-undef */
 /* eslint-disable no-use-before-define */
 var __pageFrameStartTime__ = __pageFrameStartTime__ || Date.now()
@@ -2196,8 +2199,10 @@ var __vd_version_info__ = __vd_version_info__ || {}
         })
       }
       if (style.styleSheet) {
+        // 文本
         style.styleSheet.cssText = css
       } else {
+        // 节点
         if (style.childNodes.length == 0) style.appendChild(document.createTextNode(css))
         else style.childNodes[0].nodeValue = css
       }

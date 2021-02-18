@@ -9,10 +9,12 @@ function formatTime(time) {
   time = time % 60
   var second = time
 
-  return ([hour, minute, second]).map(function (n) {
-    n = n.toString()
-    return n[1] ? n : '0' + n
-  }).join(':')
+  return [hour, minute, second]
+    .map(function (n) {
+      n = n.toString()
+      return n[1] ? n : '0' + n
+    })
+    .join(':')
 }
 
 function formatLocation(longitude, latitude) {
@@ -26,11 +28,11 @@ function formatLocation(longitude, latitude) {
 
   return {
     longitude: longitude.toString().split('.'),
-    latitude: latitude.toString().split('.')
+    latitude: latitude.toString().split('.'),
   }
 }
 
 module.exports = {
   formatTime: formatTime,
-  formatLocation: formatLocation
+  formatLocation: formatLocation,
 }
